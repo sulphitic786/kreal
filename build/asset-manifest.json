@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/web/static/css/main.20b0a71a.chunk.css",
+    "main.js": "/web/static/js/main.b52db708.chunk.js",
+    "main.js.map": "/web/static/js/main.b52db708.chunk.js.map",
+    "runtime-main.js": "/web/static/js/runtime-main.08d366cf.js",
+    "runtime-main.js.map": "/web/static/js/runtime-main.08d366cf.js.map",
+    "static/css/2.f2512455.chunk.css": "/web/static/css/2.f2512455.chunk.css",
+    "static/js/2.cc37b0b8.chunk.js": "/web/static/js/2.cc37b0b8.chunk.js",
+    "static/js/2.cc37b0b8.chunk.js.map": "/web/static/js/2.cc37b0b8.chunk.js.map",
+    "index.html": "/web/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/web/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.20b0a71a.chunk.css.map": "/web/static/css/main.20b0a71a.chunk.css.map",
+    "static/js/2.cc37b0b8.chunk.js.LICENSE.txt": "/web/static/js/2.cc37b0b8.chunk.js.LICENSE.txt",
+    "static/media/CHICKEN PAKORA.28b4d092.jpg": "/web/static/media/CHICKEN PAKORA.28b4d092.jpg",
+    "static/media/img1.ed82ec3b.jpg": "/web/static/media/img1.ed82ec3b.jpg",
+    "static/media/img2.079eb052.jpg": "/web/static/media/img2.079eb052.jpg",
+    "static/media/img3.ae2d533a.jpg": "/web/static/media/img3.ae2d533a.jpg",
+    "static/media/img4.f08f39d4.jpg": "/web/static/media/img4.f08f39d4.jpg",
+    "static/media/img5.51202639.jpg": "/web/static/media/img5.51202639.jpg",
+    "static/media/img6.059a4067.jpg": "/web/static/media/img6.059a4067.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08d366cf.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.cc37b0b8.chunk.js",
+    "static/css/main.20b0a71a.chunk.css",
+    "static/js/main.b52db708.chunk.js"
+  ]
+}
