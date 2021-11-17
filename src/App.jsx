@@ -263,76 +263,89 @@ export {App, like};*/
 
 //----------------- Login Form lec 35-------------------------
 // import React from 'react';
-// import {Route, Switch, Link} from "react-router-dom";
-// import Clock from 'react-digital-clock';
-// import Todo from './compunents/Todo';
-// import Todo2 from './compunents/Todo2';
-// import SlotMachine from './compunents/SlotMachine';
-// import Error from './compunents/Error';
-// import AppNote from './compunents/AppNote';
+import {Route, Switch, Link, NavLink} from "react-router-dom";
+import Clock from 'react-digital-clock';
+import index from './index.css'
+import Todo from './compunents/Todo';
+import Todo2 from './compunents/Todo2';
+import SlotMachine from './compunents/SlotMachine';
+import Error from './compunents/Error';
+import AppNote from './compunents/AppNote';
+import Contact from "./Project1/Contact";
+import Footer from './Project1/Footer';
+import Home from './LiveCovidTracker/Home';
+import TempHome from './Temprature/TempHome';
+import style from './Temprature/style.css';
+import IncreDecre from './compunents/IncreDecre';
+import Form from './compunents/Form';
 
 
 
-// const Bootstarp = () => {
-//   return(
-//   <>
-//   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-//   <div className="container-fluid">
-//     <a className="navbar-brand fw-bold shadow" href="#">SulphitiCo</a>
-//     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-//       <span className="navbar-toggler-icon"></span>
-//     </button>
-//     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-//       <li className="nav-item">
-//           <Link exact className="nav-link active" aria-current="page" to="/">Home</Link>
-//         </li>
-//         <li className="nav-item">
-//           <Link exact className="nav-link active" aria-current="page" to="/Todo">Todo</Link>
-//         </li>
-//         <li className="nav-item">
-//           <Link exact className="nav-link" to="/Todo2">Todo2</Link>
-//         </li>
-//         <li className="nav-item">
-//           <Link className="nav-link" to="/SlotMachine">SlotMachine</Link>
-//         </li>
+const Bootstarp = () => {
+  return(
+  <>
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand fw-bold shadow" href="#">SulphitiCo</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+      <li className="nav-item">
+          <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink exact className="nav-link" aria-current="page" to="/Todo">Todo</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink exact className="nav-link" to="/home">Covid Tracker</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/TempHome">Temprature</NavLink>
+        </li>
 
-//         <li className="nav-item dropdown">
-//           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-//             Dropdown
-//           </a>
-//           <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-//             <li><a className="dropdown-item text-danger" href="/">Todo</a></li>
-//             <li><a className="dropdown-item text-danger" href="/Todo2">Todo 2nd</a></li>
-//             <li><a className="dropdown-item text-danger" href="#">Another Task</a></li>
-//             <li><a className="dropdown-item text-danger" href="#">Something else here</a></li>
-//           </ul>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link">Disabled</a>
-//         </li>
-//       </ul>
-//       <form className="d-flex">
-//         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-//         <button className="btn btn-outline-success text-light" type="submit"> Search </button>
-//       </form>
-//       <span className=""><Clock /></span>
-//     </div>
-//   </div>
-//   </nav>
-//     <Switch>
-//     <Route exact path="/" component={AppNote} />
-//      <Route exact path="/todo" component={Todo} />
-//      <Route exact path="/todo2" component={Todo2} />
-//      <Route  path="/slotMachine" component={SlotMachine} />
-//      <Route component={Error} />
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><NavLink className="dropdown-item text-secondary" to="/IncreDecre">Incre & Decre</NavLink></li>
+            <li><NavLink className="dropdown-item text-secondary" to="/todo2">Todo 2nd</NavLink></li>
+            <li><NavLink className="dropdown-item text-secondary" to="/form">Form</NavLink></li>
+            <li><NavLink className="dropdown-item text-secondary" to="#">Something else here</NavLink></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
+        </li>
+      </ul>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success text-light" type="submit"> Search </button>
+      </form>
+      <span className=""><Clock /></span>
+    </div>
+  </div>
+  </nav>
+    <Switch>
+     <Route exact path="/" component={AppNote} />
+     <Route exact path="/todo" component={Todo} />
+     <Route exact path="/todo2" component={Todo2} />
+     <Route exact path="/Home" component={Home} />
+     <Route  path="/TempHome" component={TempHome} />
+     <Route exact path="/contact" component={Contact} />
+     <Route exact path="/IncreDecre" component={IncreDecre} />
+     <Route exact path="/form" component={Form} />
+     <Route component={Error} />
 
-//     </Switch>
-//       </> 
-//   );
-// }; 
+    </Switch>
+    <Footer />
+      </> 
+  );
+}; 
 
-// export default Bootstarp;
+export default Bootstarp;
 
 
 //-------------------------- Lec 53 Use Effect Hook ----------------
@@ -378,35 +391,35 @@ export {App, like};*/
 
 //----------------- Project1-------------------------
 
-import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
-import Navbar from "./Project1/Navbar";
-import Home from "./Project1/Home";
-import About from "./Project1/About";
-import Services from "./Project1/Services";
-import Contact from "./Project1/Contact";
-import "./Project1/style.css";
-import Footer from './Project1/Footer';
+// import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
+// import Navbar from "./Project1/Navbar";
+// import Home from "./Project1/Home";
+// import About from "./Project1/About";
+// import Services from "./Project1/Services";
+// import Contact from "./Project1/Contact";
+// import "./Project1/style.css";
+// import Footer from './Project1/Footer';
 
 
 
-     const Project1 =(() =>{
-      return (
-        <>
-        <Navbar />
-      <Switch>
-      <Route exact path="/" component={Home} />
-       <Route exact path="/services" component={Services} />
-       <Route exact path="/about" component={About} />
-       <Route exact path="/contact" component={Contact} />
-       <Redirect to="/" />
-      </Switch>
-        <Footer />
-        </> 
-      )
-     });
+//      const Project1 =(() =>{
+//       return (
+//         <>
+//         <Navbar />
+//       <Switch>
+//       <Route exact path="/" component={Home} />
+//        <Route exact path="/services" component={Services} />
+//        <Route exact path="/about" component={About} />
+//        <Route exact path="/contact" component={Contact} />
+//        <Redirect to="/" />
+//       </Switch>
+//         <Footer />
+//         </> 
+//       )
+//      });
 
 
-export default Project1;
+// export default Project1;
 
 //--------------- Increment and Decrement -------------
 // import IncreDecre from './compunents/IncreDecre';

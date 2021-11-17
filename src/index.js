@@ -207,21 +207,21 @@ import ReactDOM from 'react-dom';
 // );
 
 // //----------------- Bootstarp-------------------------
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import { BrowserRouter } from 'react-router-dom';
-// import Bootstrap from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import Bootstrap from './App';
 
 
-// ReactDOM.render(
-//     <>
+ReactDOM.render(
+    <>
      
-//      <BrowserRouter>
-//         {/* <Bootstrap /> */}
+     <BrowserRouter>
+        <Bootstrap />
         
-//      </BrowserRouter>
-//     </>
-// ,document.getElementById('root')
-// );
+     </BrowserRouter>
+    </>
+,document.getElementById('root')
+);
 
 
 
@@ -240,21 +240,21 @@ import ReactDOM from 'react-dom';
 
 
 //----------------- Project1-------------------------
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import { BrowserRouter } from 'react-router-dom';
-import Project1 from './App';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+// import { BrowserRouter } from 'react-router-dom';
+// import Project1 from './App';
 
-ReactDOM.render(
-    <>
+// ReactDOM.render(
+//     <>
      
-     <BrowserRouter>
-        <Project1 />
+//      <BrowserRouter>
+//         <Project1 />
         
-     </BrowserRouter>
-    </>
-,document.getElementById('root')
-);
+//      </BrowserRouter>
+//     </>
+// ,document.getElementById('root')
+// );
 
 //----------------- Increment and Decrement -------------------------
 // import App from './App';

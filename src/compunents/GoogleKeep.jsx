@@ -40,7 +40,7 @@ const GoogleKeep = (props) =>{
         <div className="container">
         <h2 className="text-center text-success pt-5">Sulphitic Notes Keeper</h2>
          <div className="row mt-4">
-             <div className="col-md-4 offset-md-4 shadow-lg py-3" onClick={expandIt} onDoubleClick={normal}>
+             <div className="col-md-4 offset-md-4 shadow-lg py-3 mb-5" onClick={expandIt} onDoubleClick={normal}>
                  {/* {expand? null:<h5 className="text-success text-center">📑 Click to write the new note 📑</h5>} */}
                   { expand?  <input type="text" autoComplete="off" name="title" onChange={InputEvent} value={note.title} className="form-control" placeholder="Title" /> :null}
                   <textarea name="content" onChange={InputEvent} value={note.content} className="form-control mt-2" id="" cols="10" rows="4" placeholder="Write a note here..."></textarea>

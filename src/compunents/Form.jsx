@@ -30,7 +30,10 @@ const Form = () => {
     
       const formSubmit = (value) => {
         value.preventDefault();
-        alert(`Data Submitted Successfully!`)
+        alert(`Data Submitted Successfully as Under!
+    -->Name: ${fullName.fname} ${fullName.lname}
+    -->Qualification: ${fullName.qaul}
+    -->Email: ${fullName.email}`)
       };
 
     return (
@@ -43,7 +46,7 @@ const Form = () => {
 
                     <div className="form-group">
                         <label for="exampleInputEmail1">First Name</label>
-                        <input type="text" className="form-control text-capitalize" autoComplete="off" id="exampleInputEma" ariadescribedby="emailHelp1"
+                        <input type="text" required className="form-control text-capitalize" autoComplete="off" id="exampleInputEma" ariadescribedby="emailHelp1"
                          placeholder="Enter First Name"
                          name="fname"
                          onChange={inputEvent}
@@ -70,7 +73,7 @@ const Form = () => {
                         </div>
                     <div className="form-group my-3">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" className="form-control" autoComplete="off" id="exampleInputEmail" ariadescribedby="emailHelp3"
+                        <input type="email" required className="form-control" autoComplete="off" id="exampleInputEmail" ariadescribedby="emailHelp3"
                          placeholder="Enter Your Email"
                          name="email"
                          onChange={inputEvent}

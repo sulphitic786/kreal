@@ -29,7 +29,7 @@ const IncreDecre = (() => {
             <div className="col-md-6 offset-md-4 offset-sm-3 text-center">
             <div className="card mt-5 shadow-lg" style={{width: '18rem'}}>
             <div className="card-body bg-dark rounded">
-            <h5 className="card-title fw-bold text-danger title">Increment and Decrement</h5><hr className="text-light" />
+            <h5 className="card-title fw-bold text-light title">Increment and Decrement</h5><hr className="text-light" />
                 <h1 className="card-text text-light"> {num} </h1>
                 <div className="row mx-auto my-5">
                     <div className="col-5">

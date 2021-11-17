@@ -22,8 +22,12 @@ const Contact = (()=> {
 
        const formSubmit =(e) =>{
            e.preventDefault();
-           alert(
-               `My Name: ${data.fullName} ---> My Phone No: ${data.phone} ---> My Email: ${data.email} ---> My Message: ${data.message}`
+alert(
+`Thanks for Your Feedback!
+My Name: ---> ${data.fullName} 
+My Phone No: ---> ${data.phone} 
+My Email: ---> ${data.email} 
+My Message: ---> ${data.message}`
                );
        };
 

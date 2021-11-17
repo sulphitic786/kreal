@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(96, 161, 204);;
+  background-color: rgb(214, 211, 211);;
 }
 
 code {
@@ -62,13 +62,18 @@ color: red !important;
 }
 /* --------------Todo List Lec 40 -------------- */
 .card-body{
-  min-height: 450px;
+  min-height: 400px;
+  box-shadow: rgb(34, 158, 65) 0px 0px 5px 2px;
+  
+}
+.app-main{
+  margin-bottom: 30px;
 }
 
 .title{
   color: white;
   background: transparent;
-  background-color: #8566aa;
+  background-color: #1c1b1d;
   margin-bottom: 10px;
   padding: 08px 0px;
   border-bottom: 2px solid white !important;

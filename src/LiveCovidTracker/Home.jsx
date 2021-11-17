@@ -21,8 +21,8 @@ const Home = () => {
                 <div className="row">
                   <h2 className="text-danger text-center fw-bold pt-5">Pakistan COVID-19 Dashbord</h2>
                 </div>
-                <div className="row text-center mt-5">
-                    <div className="col-md-10 offset-2 mx-auto d-flex m-3">
+                <div className="row mx-auto m-5">
+                    <div className="col-md-10 mx-auto d-inline-flex m-3">
 
                         <div className="card bg-primary mx-2 p-3 w-25">
                             <h4 className="text-light"> Country </h4>
