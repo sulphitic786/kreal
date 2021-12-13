@@ -10,3 +10,11 @@
 .info{
     margin: 100px 0 0 0px;
 }
+@media (max-width: 1199px) {
+    .info{
+        margin: 90px 0 0 0px;
+    }
+    #main {
+      margin-left: 0;
+    }
+  }

@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 //------------ Imported Compunents -------------
 // import App, {like} from './App.jsx';
 // import Challange from './compunents/Challange 5.jsx';
@@ -206,22 +210,41 @@ import ReactDOM from 'react-dom';
 // ,document.getElementById('root')
 // );
 
-// //----------------- Bootstarp-------------------------
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from 'react-router-dom';
-import Bootstrap from './App';
+// // //----------------- Bootstarp-------------------------
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import { BrowserRouter } from 'react-router-dom';
+// import Bootstrap from './App';
 
 
-ReactDOM.render(
-    <>
+// ReactDOM.render(
+//     <>
      
-     <BrowserRouter>
-        <Bootstrap />
+//      <BrowserRouter>
+//         <Bootstrap />
         
-     </BrowserRouter>
-    </>
-,document.getElementById('root')
-);
+//      </BrowserRouter>
+//     </>
+// ,document.getElementById('root') Restaurant
+// );
+
+
+// //----------------- Restaurant-------------------------
+
+// import { BrowserRouter } from 'react-router-dom';
+// import Restaurant from './App';
+
+
+// ReactDOM.render(
+//     <>
+     
+//      <BrowserRouter>
+//         <Restaurant />
+        
+//      </BrowserRouter>
+//     </>
+// ,document.getElementById('root') 
+// );
+
 
 
 
@@ -276,3 +299,21 @@ ReactDOM.render(
 //     <App />
 // ,document.getElementById('root')
 // );
+
+
+// //-----------------54 Restaurant-------------------------
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
+
+import App5 from './App';
+
+
+ReactDOM.render(
+    <>
+     <App5 />
+    </>
+    
+,document.getElementById('root') 
+);
+
+    

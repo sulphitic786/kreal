@@ -1,5 +1,5 @@
 // import { Home } from '@material-ui/icons';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 //import Heading from './Heading';
 
 /*function App(){
@@ -261,91 +261,156 @@ export {App, like};*/
 
 
 
-//----------------- Login Form lec 35-------------------------
+// //----------------- Login Form lec 35-------------------------
+// // import React from 'react';
+// import {Route, Switch, Link,Redirect, NavLink} from "react-router-dom";
+// import Clock from 'react-digital-clock';
+// import index from './index.css'
+// import Todo from './compunents/Todo';
+// import Todo2 from './compunents/Todo2';
+// import SlotMachine from './compunents/SlotMachine';
+// import Error from './compunents/Error';
+// import AppNote from './compunents/AppNote';
+// import Contact from "./Project1/Contact";
+// import Footer from './Project1/Footer';
+// import Home from './LiveCovidTracker/Home';
+// import StateWise from './LiveCovidTracker/StateWise';
+// import TempHome from './Temprature/TempHome';
+// import style from './Temprature/style.css';
+// import IncreDecre from './compunents/IncreDecre';
+// import Form from './compunents/Form';
+// import CalcuHome from './Calculator/CalcuHome';
+// import ApiPokemon from './compunents/ApiPokemon';
+
+
+
+
+// const Bootstarp = () => {
+//   return(
+//   <>
+//   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+//   <div className="container-fluid">
+//     <a className="navbar-brand fw-bold shadow" href="#">SulphitiCo</a>
+//     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+//       <span className="navbar-toggler-icon"></span>
+//     </button>
+//     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+//       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+//       <li className="nav-item">
+//           <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink exact className="nav-link" aria-current="page" to="/state wise">State Wise</NavLink>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink exact className="nav-link" aria-current="page" to="/Calculator">Calculator</NavLink>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink exact className="nav-link" aria-current="page" to="/Todo">Todo</NavLink>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink exact className="nav-link" to="/notes">Notes</NavLink>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink className="nav-link" to="/temprature">Temprature</NavLink>
+//         </li>
+
+//         <li className="nav-item dropdown">
+//           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+//             More
+//           </a>
+//           <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+//             <li><NavLink className="dropdown-item text-secondary" to="/IncreDecre">Incre & Decre</NavLink></li>
+//             <li><NavLink className="dropdown-item text-secondary" to="/todo2">Todo 2nd</NavLink></li>
+//             <li><NavLink className="dropdown-item text-secondary" to="/form">Form</NavLink></li>
+//             <li><NavLink className="dropdown-item text-secondary" to="api pokemon">Pokemon</NavLink></li>
+//           </ul>
+//         </li>
+//         <li className="nav-item">
+//           <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
+//         </li>
+//       </ul>
+//       <form className="d-flex">
+//         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+//         <button className="btn btn-outline-success text-light" type="submit"> Search </button>
+//       </form>
+//       <span className=""><Clock /></span>
+//     </div>
+//   </div>
+//   </nav>
+//     <Switch>
+//      <Route exact path="/" component={Home} />
+//      <Route exact path="/state wise" component={StateWise} />
+//      <Route exact path="/Calculator" component={CalcuHome} />
+//      <Route exact path="/todo" component={Todo} />
+//      <Route exact path="/todo2" component={Todo2} />
+//      <Route exact path="/notes" component={AppNote} />
+//      <Route exact path="/temprature" component={TempHome} />
+//      <Route exact path="/contact" component={Contact} />
+//      <Route exact path="/IncreDecre" component={IncreDecre} />
+//      <Route exact path="/form" component={Form} />
+//      <Route exact path="/api pokemon" component={ApiPokemon} />
+//      <Route component={Home} />
+
+//     </Switch>
+//     <Footer />
+//       </> 
+//   );
+// }; 
+
+// export default Bootstarp;
+
+
+//----------------- Restaurant -------------------------
 // import React from 'react';
-import {Route, Switch, Link, NavLink} from "react-router-dom";
-import Clock from 'react-digital-clock';
-import index from './index.css'
-import Todo from './compunents/Todo';
-import Todo2 from './compunents/Todo2';
-import SlotMachine from './compunents/SlotMachine';
-import Error from './compunents/Error';
-import AppNote from './compunents/AppNote';
-import Contact from "./Project1/Contact";
-import Footer from './Project1/Footer';
-import Home from './LiveCovidTracker/Home';
-import TempHome from './Temprature/TempHome';
-import style from './Temprature/style.css';
-import IncreDecre from './compunents/IncreDecre';
-import Form from './compunents/Form';
+// import {Route, Switch, Link,Redirect, NavLink} from "react-router-dom";
+// import Navbar from './Live Retaurant/Navbar';
+// import RestuHome from './Live Retaurant/RestuHome';
+// import { css } from "@emotion/react";
+// import Footer from './Project1/Footer';
+// import PropagateLoader from 'react-spinners/PropagateLoader';
 
 
 
-const Bootstarp = () => {
-  return(
-  <>
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand fw-bold shadow" href="#">SulphitiCo</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-      <li className="nav-item">
-          <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink exact className="nav-link" aria-current="page" to="/Todo">Todo</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink exact className="nav-link" to="/home">Covid Tracker</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/TempHome">Temprature</NavLink>
-        </li>
 
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-            <li><NavLink className="dropdown-item text-secondary" to="/IncreDecre">Incre & Decre</NavLink></li>
-            <li><NavLink className="dropdown-item text-secondary" to="/todo2">Todo 2nd</NavLink></li>
-            <li><NavLink className="dropdown-item text-secondary" to="/form">Form</NavLink></li>
-            <li><NavLink className="dropdown-item text-secondary" to="#">Something else here</NavLink></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
-        </li>
-      </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success text-light" type="submit"> Search </button>
-      </form>
-      <span className=""><Clock /></span>
-    </div>
-  </div>
-  </nav>
-    <Switch>
-     <Route exact path="/" component={AppNote} />
-     <Route exact path="/todo" component={Todo} />
-     <Route exact path="/todo2" component={Todo2} />
-     <Route exact path="/Home" component={Home} />
-     <Route  path="/TempHome" component={TempHome} />
-     <Route exact path="/contact" component={Contact} />
-     <Route exact path="/IncreDecre" component={IncreDecre} />
-     <Route exact path="/form" component={Form} />
-     <Route component={Error} />
 
-    </Switch>
-    <Footer />
-      </> 
-  );
-}; 
+// const Restaurant = () => {
 
-export default Bootstarp;
+//     const [loading, setLoading] = useState(false);
+
+//       const override = css`
+//       display: block;
+//       margin: 300px 700px;
+//       border-color: red;
+//     `;
+
+//     useEffect(() => {
+//       setLoading(true);
+//       setTimeout(()=>{
+//         setLoading(false)
+//       }, 5000);
+//     }, []);
+
+
+//   return(
+//   <>
+    
+//     {
+//       loading ? <PropagateLoader color={"green"} loading={loading} css={override} size={50} />
+//       :
+//       <>
+//       <Navbar />
+//       <RestuHome />
+//       <Footer />
+//     </>
+//     }
+    
+    
+//       </> 
+//   );
+// }; 
+
+// export default Restaurant;
 
 
 //-------------------------- Lec 53 Use Effect Hook ----------------
@@ -504,3 +569,43 @@ export default Bootstarp;
 // }
 
 // export default App;
+
+
+// ----------------- 54 Restaurant -----------------
+// import Navbar from './Restaurant/Navbar';
+// import Footer from './Project1/Footer';
+
+
+
+// const Restu1 = () => {
+//   return (
+//     <>
+//       <Navbar />
+//       <Footer />
+//     </>
+//   )
+// }
+
+// export default Restu1;
+
+
+
+// ------------------ Tester ---------
+import './tester/StyleTester.css';
+import Nav from './tester/Nav';
+import TForm from './tester/TForm';
+
+const App5 = () => {
+
+  
+
+return (
+	<>
+  <Nav />
+  <TForm />
+  </>
+);
+}
+
+export default App5;
+
