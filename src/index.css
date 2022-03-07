@@ -38,28 +38,6 @@ code {
   border-radius: 20px;
   
 }
-
-/* -------------Slot Machine -------- */
-.slotH{
-  text-align: center;
-}
-.slot{
-  text-align: center;
-  color: brown;
-  
-}
-.main{
-  border: rgb(15, 31, 29) 2px solid;
-  margin:20px 100px;
-}
-.add-btn{
-  font-size: 5px !important;
-  color: brown;
-  border-radius: 50% !important;
-}
-.del:hover{
-color: red !important;
-}
 /* --------------Todo List Lec 40 -------------- */
 .card-body{
   min-height: 400px;
