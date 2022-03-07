@@ -1,137 +1,12 @@
 // import { Home } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
-//import Heading from './Heading';
-
-/*function App(){
-    let curDate = new Date();
-curDate = curDate.getHours();
-let greeting = "";
-const cssStyle = {};
-
-if(curDate >= 1 && curDate < 11)
-{
-  greeting = "Good Morning";
-  cssStyle.color = "green";
-}else if(curDate >= 11 && curDate < 19 )
-{
-  greeting = "Good Afternoon";
-  cssStyle.color = "orange";
-} else{
-  greeting = "Good Evening";
-  cssStyle.color = "blue";
-}
-return(
-  <> 
-  <div className="sir" >
-  <h1> <Heading /> <span style={cssStyle}> {greeting} </span></h1>
-  </div>
-  </>
-);
-}
-function like(){
-  var name = 'Please Like and Share it with your all friends!';
-  return name;
-};
-
-export {App, like};*/
-
-
- //---------------- Slot Machine Lec No 28 --------------
-//  const App = () => {
-//    return
-//    <>
-//      <h1> Welcome to Slot Machine  </h1>
-//    </>
-//  };
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
 
 
 
-
-  //---------------- Slot Machine Lec No 28 --------------
-
-  // const SlotM = (props) => {
-  //   // let x = '😄';
-  //   // let y = '😄' ;
-  //   // let z = '😄';
-
-  //   // let x = props.x;
-  //   // let y = props.y;
-  //   // let z = props.z;
-
-  //   let {x, y, z} = props;
-  //   if(x===y && y===z)
-  //   {
-  //     return(
-  //       <>
-  //       <div className="slot">
-  //       <h1> {x} {y} {z} </h1>
-  //       <h3>This is Matching</h3>
-  //       <hr />
-  //       </div>
-  //       </>
-  //     );
-  //   }
-  //   else{
-  //     return(
-  //       <>
-  //       <div className="slot">
-  //       <h1> {x} {y} {z} </h1>
-  //       <h3>This is Not Matching</h3>
-  //       <hr />
-  //       </div>
-  //       </>
-  //     );
-  //   }
-  // }
-
-
-  // const App = () => {
-  //   return(
-  //   <>
-  //   <div className ="main">
-  //   <h2 className="slotH"> 🎰 Welcome to Slot Machine 🎰 </h2>
-  //   <SlotM x='🍓' y='🍓' z='🍓' />
-  //   <SlotM x='😄' y='🙈' z='✈️' />
-  //   <SlotM x='😄' y='😄' z='😄'/>
-  //   <SlotM x='⭐' y='🍓' z='😂'/>
-  //   </div>
-  //   </>
-  //   );
-  // };
-
-
-  // export default App;
-
-
-
-
-  //------------------ Hooks lec No 30 -------------------------
-  // import React, { useState } from 'react';
-  
-
-
-  // const AddCal = () => {
-  //   const state = useState();
-  //   const [count, setCount] = useState(1);
-
-  // const IncNum = () => {
-    
-  //   setCount(count + 1);
- 
-  //   };
-  //   return(
-  //     <div style={{textAlign:'center'}}>
-  //     <h1> {count} </h1>
-  //     <button onClick={IncNum}> Click Me </button>
-  //     </div>
-  //   );
-  // };
-
-  // export default AddCal;
-
-
-  //--------------------- Hooks Current Time Lec 31-------------
+//--------------------- Hooks Current Time Lec 31-------------
 //  import React,{ useState } from 'react';
 
 // const Clock = (props) => {
@@ -166,7 +41,7 @@ export {App, like};*/
 //   const updateTime = () =>{
 //     let newTime = new Date().toLocaleTimeString();
 //     settime(newTime);
-    
+
 //   };
 //   setInterval(updateTime,1000);
 //   return(
@@ -180,15 +55,12 @@ export {App, like};*/
 
 // export default DClock;
 
-
-//----------------- Events lec 33-------------------------
-
 //----------------- Forms lec 34-------------------------
 //  import React, { useState } from 'react';
 //  import AddIcon from '@material-ui/icons/Add';
 //  import DeleteIcon from '@material-ui/icons/Delete';
- 
-  
+
+
 //  const Form = () => {
 //   const [name, setName] = useState("");
 
@@ -196,17 +68,17 @@ export {App, like};*/
 //   const inputEvent = (event) => {
 //     setName(event.target.value);
 //   };
-  
+
 //   return(
 //         <div style={{textAlign:'center'}}>
-        
+
 //         <h1> Hello:{name} </h1>
 //         <input type="text" 
 //               placeholder="Enter Your First Name" 
 //               onChange={inputEvent} 
 //               value={name} /><br/>
 //         <button className="btn btn-success"> Show Data <AddIcon /> </button>   
-             
+
 //         </div>
 //   );
 // };
@@ -236,7 +108,7 @@ export {App, like};*/
 //     setLastNameNew(lastName);
 //   };
 
-  
+
 //   return(
 //         <div style={{textAlign:'center'}}>
 //         <form onSubmit={onSubmit}>
@@ -261,9 +133,9 @@ export {App, like};*/
 
 
 
-// //----------------- Login Form lec 35-------------------------
-// // import React from 'react';
-// import {Route, Switch, Link,Redirect, NavLink} from "react-router-dom";
+// //----------------- Bootstrap Grand -------------------------
+// import React from 'react';
+// import {Route, Switch, Link,Redirect, NavLink, useLocation} from "react-router-dom";
 // import Clock from 'react-digital-clock';
 // import index from './index.css'
 // import Todo from './compunents/Todo';
@@ -286,6 +158,7 @@ export {App, like};*/
 
 
 // const Bootstarp = () => {
+//   document.title = "Combined Demo";
 //   return(
 //   <>
 //   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -300,10 +173,10 @@ export {App, like};*/
 //           <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink exact className="nav-link" aria-current="page" to="/state wise">State Wise</NavLink>
+//           <NavLink exact className="nav-link" aria-current="page" to="/">State Wise</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink exact className="nav-link" aria-current="page" to="/Calculator">Calculator</NavLink>
+//           <NavLink exact className="nav-link" aria-current="page" to="/">Calculator</NavLink>
 //         </li>
 //         <li className="nav-item">
 //           <NavLink exact className="nav-link" aria-current="page" to="/Todo">Todo</NavLink>
@@ -312,7 +185,7 @@ export {App, like};*/
 //           <NavLink exact className="nav-link" to="/notes">Notes</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink className="nav-link" to="/temprature">Temprature</NavLink>
+//           <NavLink className="nav-link" to="/">Temprature</NavLink>
 //         </li>
 
 //         <li className="nav-item dropdown">
@@ -339,7 +212,7 @@ export {App, like};*/
 //   </div>
 //   </nav>
 //     <Switch>
-//      <Route exact path="/" component={Home} />
+//      <Route exact path="/" component={Todo} />
 //      <Route exact path="/state wise" component={StateWise} />
 //      <Route exact path="/Calculator" component={CalcuHome} />
 //      <Route exact path="/todo" component={Todo} />
@@ -350,10 +223,10 @@ export {App, like};*/
 //      <Route exact path="/IncreDecre" component={IncreDecre} />
 //      <Route exact path="/form" component={Form} />
 //      <Route exact path="/api pokemon" component={ApiPokemon} />
-//      <Route component={Home} />
+//      <Route component={Todo} />
 
 //     </Switch>
-//     <Footer />
+// <Footer />
 //       </> 
 //   );
 // }; 
@@ -362,17 +235,13 @@ export {App, like};*/
 
 
 //----------------- Restaurant -------------------------
-// import React from 'react';
+
 // import {Route, Switch, Link,Redirect, NavLink} from "react-router-dom";
-// import Navbar from './Live Retaurant/Navbar';
-// import RestuHome from './Live Retaurant/RestuHome';
+// import Navbar from './LiveRetaurant/Navbar';
+// import RestuHome from './LiveRetaurant/RestuHome';
 // import { css } from "@emotion/react";
-// import Footer from './Project1/Footer';
+// import Footer from './LiveRetaurant/Footer';
 // import PropagateLoader from 'react-spinners/PropagateLoader';
-
-
-
-
 
 // const Restaurant = () => {
 
@@ -394,7 +263,7 @@ export {App, like};*/
 
 //   return(
 //   <>
-    
+
 //     {
 //       loading ? <PropagateLoader color={"green"} loading={loading} css={override} size={50} />
 //       :
@@ -404,8 +273,6 @@ export {App, like};*/
 //       <Footer />
 //     </>
 //     }
-    
-    
 //       </> 
 //   );
 // }; 
@@ -413,94 +280,37 @@ export {App, like};*/
 // export default Restaurant;
 
 
-//-------------------------- Lec 53 Use Effect Hook ----------------
-// import React, { useState } from 'react';
-// import { useEffect } from 'react';
+//----------------- Project1 Web-------------------------
 
-// const UseEffectHook = () => {
-//   const [num, setNum] = useState(0);
+import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
+import Navbar from "./Project1/Navbar";
+import Home from "./Project1/Home";
+import About from './Project1/About';
+import Services from "./Project1/Services";
+import Contact from "./Project1/Contact";
+import "./Project1/style.css";
+import Footer from './Project1/Footer';
 
-//   const updateNum = () => {
+     const Project1 =(() =>{
+      return (
+        <>
+        <Navbar />
+      <Switch>
+      <Route exact path="/" component={Home} />
+       <Route exact path="/services" component={Services} />
+       <Route exact path="/about" component={About} />
+       <Route exact path="/contact" component={Contact} />
+       <Redirect to="/" />
+      </Switch>
+        <Footer />
+        </> 
+      )
+     });
 
-//         setNum(num + 1);
-//   };
-
-//   return (
-//       <button className="text-danger" onClick={updateNum}>Click Me {num} </button>
-//   );
-// };
-
-//------------Ese Effect -------------
-// const UseEffectHook = () => {
-//   const [num, setNum] = useState(0);
-
-//       useEffect(() => {
-//           alert ("You Clicked!");
-//       }, [num]);
-      
-
-//   return (
-//       <button className="text-danger" onClick={() => {setNum(num + 1)}}>Click Me {num} </button>
-//   );
-// };
+export default Project1;
 
 
-//   export default UseEffectHook;
-
-
-
-
-
-
-
-
-//----------------- Project1-------------------------
-
-// import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
-// import Navbar from "./Project1/Navbar";
-// import Home from "./Project1/Home";
-// import About from "./Project1/About";
-// import Services from "./Project1/Services";
-// import Contact from "./Project1/Contact";
-// import "./Project1/style.css";
-// import Footer from './Project1/Footer';
-
-
-
-//      const Project1 =(() =>{
-//       return (
-//         <>
-//         <Navbar />
-//       <Switch>
-//       <Route exact path="/" component={Home} />
-//        <Route exact path="/services" component={Services} />
-//        <Route exact path="/about" component={About} />
-//        <Route exact path="/contact" component={Contact} />
-//        <Redirect to="/" />
-//       </Switch>
-//         <Footer />
-//         </> 
-//       )
-//      });
-
-
-// export default Project1;
-
-//--------------- Increment and Decrement -------------
-// import IncreDecre from './compunents/IncreDecre';
-
-
-// const App = () => {
-//   return (
-//     <>
-//       <IncreDecre />
-//     </>
-//   )
-// }
-
-// export default App;
-
-//--------------- Project Pizza -------------
+//--------------- Project Increment & Decrement -------------
 // import IncreDecre from './compunents/IncreDecre';
 
 
@@ -528,7 +338,7 @@ export {App, like};*/
 
 // export default App;
 
-// //--------------- Project Temprature -------------
+// //--------------- Project Live Temprature -------------
 // import "./Temprature/style.css"
 // import TempHome from './Temprature/TempHome';
 
@@ -542,10 +352,9 @@ export {App, like};*/
 
 // export default App;
 
-//--------------- Project Covid Data -------------
+//--------------- Project Landing Page -------------
 // import Home from "./LandingPage/Home";
 // import "./LandingPage/Style.css"
-
 
 // const App = () => {
 //   return (
@@ -557,7 +366,7 @@ export {App, like};*/
 
 // export default App;
 
-//--------------- Project Temprature -------------
+//--------------- Project Form -------------
 // import Form from './compunents/Form';
 
 // const App = () => {
@@ -588,24 +397,39 @@ export {App, like};*/
 
 // export default Restu1;
 
+// ------------------ Tester Form ---------
+// import './tester/StyleTester.css';
+// import Nav from './tester/Nav';
+// import TForm from './tester/TForm';
+
+// const App = () => {
+// return (
+// 	<>
+//   <Nav />
+//   <TForm />
+//   </>
+// );
+// }
+
+// export default App;
+
+// --------- ===== PSD's Data ===== ---------
+// import Home from './Psd Data/REVELATION/Home';  // 1st Psd Relevation
+// import Home2 from './Psd Data/Systmatic/Home2';  // 2nd Psd Systmatic
+// import Home3 from './Psd Data/Modernist/Home3';  // 2nd Psd Modernist
+//    import Home4 from './Psd Data/Pex/Home4';
+// const App = () => {
+//   return (
+//     <>
+//       {/* <Home />           */}
+//       {/* <Home2 />              */}
+      // {/* <Home3 />      */}
+//       <Home4 />     
+//       </>
+//   );
+// }
+
+// export default App;
 
 
-// ------------------ Tester ---------
-import './tester/StyleTester.css';
-import Nav from './tester/Nav';
-import TForm from './tester/TForm';
-
-const App5 = () => {
-
-  
-
-return (
-	<>
-  <Nav />
-  <TForm />
-  </>
-);
-}
-
-export default App5;
 
