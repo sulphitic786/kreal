@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
 
 
 //------------------ Slot Machine Lec 28  -- Refrence App --------------------------
@@ -83,33 +85,35 @@ import ReactDOM from 'react-dom';
 //----------------- Project1-------------------------
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import { BrowserRouter } from 'react-router-dom';
-import Project1 from './App';
+// import { BrowserRouter } from 'react-router-dom';
+// import Project1 from './App';
 
-ReactDOM.render(
-    <>
+// ReactDOM.render(
+//     <>
      
-     <BrowserRouter>
-        <Project1 />
+//      <BrowserRouter>
+//         <Project1 />
         
-     </BrowserRouter>
-    </>
-,document.getElementById('root')
-);
+//      </BrowserRouter>
+//     </>
+// ,document.getElementById('root')
+// );
 
 
 // //-----------------Tester Form-------------------------
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
 
-// import App from './App';
+import App from './App';
 
-// ReactDOM.render(
-//     <>
-//      <App />
-//     </>
+ReactDOM.render(
+<>
+    <BrowserRouter>
+     <App />
+    </BrowserRouter>
+</>
     
-// ,document.getElementById('root') 
-// );
+,document.getElementById('root') 
+);
 
     

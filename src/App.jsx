@@ -173,10 +173,10 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 //           <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink exact className="nav-link" aria-current="page" to="/">State Wise</NavLink>
+//           <NavLink exact className="nav-link" aria-current="page" to="/state wise">State Wise</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink exact className="nav-link" aria-current="page" to="/">Calculator</NavLink>
+//           <NavLink exact className="nav-link" aria-current="page" to="/Calculator">Calculator</NavLink>
 //         </li>
 //         <li className="nav-item">
 //           <NavLink exact className="nav-link" aria-current="page" to="/Todo">Todo</NavLink>
@@ -185,7 +185,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 //           <NavLink exact className="nav-link" to="/notes">Notes</NavLink>
 //         </li>
 //         <li className="nav-item">
-//           <NavLink className="nav-link" to="/">Temprature</NavLink>
+//           <NavLink className="nav-link" to="/temprature">Temprature</NavLink>
 //         </li>
 
 //         <li className="nav-item dropdown">
@@ -282,32 +282,32 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
 //----------------- Project1 Web-------------------------
 
-import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
-import Navbar from "./Project1/Navbar";
-import Home from "./Project1/Home";
-import About from './Project1/About';
-import Services from "./Project1/Services";
-import Contact from "./Project1/Contact";
-import "./Project1/style.css";
-import Footer from './Project1/Footer';
+// import {Route, Switch, Redirect, Link, NavLink} from "react-router-dom";
+// import Navbar from "./Project1/Navbar";
+// import Home from "./Project1/Home";
+// import About from './Project1/About';
+// import Services from "./Project1/Services";
+// import Contact from "./Project1/Contact";
+// import "./Project1/style.css";
+// import Footer from './Project1/Footer';
 
-     const Project1 =(() =>{
-      return (
-        <>
-        <Navbar />
-      <Switch>
-      <Route exact path="/" component={Home} />
-       <Route exact path="/services" component={Services} />
-       <Route exact path="/about" component={About} />
-       <Route exact path="/contact" component={Contact} />
-       <Redirect to="/" />
-      </Switch>
-        <Footer />
-        </> 
-      )
-     });
+//      const Project1 =(() =>{
+//       return (
+//         <>
+//         <Navbar />
+//       <Switch>
+//       <Route exact path="/" component={Home} />
+//        <Route exact path="/services" component={Services} />
+//        <Route exact path="/about" component={About} />
+//        <Route exact path="/contact" component={Contact} />
+//        <Redirect to="/" />
+//       </Switch>
+//         <Footer />
+//         </> 
+//       )
+//      });
 
-export default Project1;
+// export default Project1;
 
 
 //--------------- Project Increment & Decrement -------------
@@ -417,19 +417,22 @@ export default Project1;
 // import Home from './Psd Data/REVELATION/Home';  // 1st Psd Relevation
 // import Home2 from './Psd Data/Systmatic/Home2';  // 2nd Psd Systmatic
 // import Home3 from './Psd Data/Modernist/Home3';  // 2nd Psd Modernist
-//    import Home4 from './Psd Data/Pex/Home4';
-// const App = () => {
-//   return (
-//     <>
-//       {/* <Home />           */}
-//       {/* <Home2 />              */}
-      // {/* <Home3 />      */}
-//       <Home4 />     
-//       </>
-//   );
-// }
+// import Home4 from './Psd Data/Pex/Home4';
+   import Home5 from './Psd Data/Krea/Home5';
 
-// export default App;
+const App = () => {
+  return (
+    <>
+      {/* <Home />           */}
+      {/* <Home2 />              */}
+      {/* <Home3 />      */}
+      {/* <Home4 />      */}
+      <Home5 />
+      </>
+  );
+}
+
+export default App;
 
 
 
