@@ -9,7 +9,6 @@ body{
 .main-container{
     max-width: 1920px;
     margin: auto;
-    border: 1px solid red;
 }
 .navbar{
     background-image: url('./images/bg.png');
@@ -809,7 +808,8 @@ body{
 
 }
 .social .fab:hover{
- box-shadow: 0px 0px 5px  red;
+ text-shadow: 0px 0px 8px  red;
+ transform: translateY(-5px);
 }
 .rights {
   font-size: 12px;
